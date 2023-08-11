@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: white;
+    
+}
+html, body{
+    height: 100%;
+    width: 100%;
+
+
+}
+.webkit-Issue::before{
+    content: "EAT. DRINK. PLAY.";
+    position: absolute;
+    color: black;
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke: 2px #95C11E ;
+    z-index:-1;
+}
+
+
+
+.scrollerIn{
+    animation:Scroll ;
+    animation-iteration-count: infinite;
+    animation-duration: 80s;
+    animation-timing-function: linear;
+
+}
+@keyframes  Scroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+
+.Scroller::-webkit-scrollbar{
+    display: none;
+}
+.bg-image1{
+
+    background-image: url(./assets/bg-image1.avif);
+}
+.bg-image2 {
+
+    background-image: url(./assets/bg-image2.webp);
+}
+.bg-image3 {
+
+    background-image: url(./assets/bg-image3.avif);
+}
+
+
